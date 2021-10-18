@@ -105,8 +105,28 @@ p {
 
 /*address div-contact page*/
 .address {
-  text-align: center;
+  text-align: left;
   color: #0E0354;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	background-color: #780002;
+	height: 400px;
+	max-width: 350px;
+	align-items: center;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 10px 5px 5px gray;
+}
+
+
+.form-text {
+	color: #d4c79d;
+	padding: 12px 16px;
+	font-weight: bold;
 }
 
 /*pertaining to the about page*/
@@ -233,7 +253,26 @@ a {
   }
 }
 
-
+form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	background-color: #9dd4c5;
+	height: 400px;
+	max-width: 350px;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-box-shadow: 10px 5px 5px gray;
+	        box-shadow: 10px 5px 5px gray;
+        }
 
 @keyframes color-change {
   0% {
