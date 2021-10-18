@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beginnings</title>
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link href="css/style.production.css" rel="stylesheet" type="text/css">
+</head>
+
+  <body>
+    <header class="page-header">
+      <!-- Add Logo here -->
+      <img src="img/R.png" class="logo" alt="Personal logo of Renato, an uppercase r on a black backgroung">
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item item navigation-list__item--active">Contact</a>
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <div class="address">
+      Renato<br>
+      Street<br>
+      City, State<br>
+      Zip<br>
+      <br>
+      Tel <a href="tel:+1111111111" >cell: (111) 111 1111</a><br>
+      Skype <a href="skype:live:renato_181_1"> Renato</a><br>
+      Email <a href="mailto:renato_181@hotmail.com?subject=testing out mailto">renato_181@hotmail.com </a>
+    </div>
+    <br><br><br>
+    <form action="" method="post" id="contact-form">
+      <label class="standard-label" for="contact-email">Email: </label>
+      <input type="email" id="contact-email" required>
+
+      <label class="standard-label" for="contact-telephone">Telephone: </label>
+      <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+
+      <label class="standard-label" for="my-input">Message: </label>
+      <textarea id="my-input" required maxlength="240"></textarea>
+    <input type="submit" value="Send message">
+    </form>
+  <script src="js/tota11y.min.js"></script>
+  </body>
+  <footer class="page-footer">
+  <p>Find me on</p>
+    <div class="social-media">
+  <!-- Github logo -->
+    <img src="img/github_icon.svg" height="32" width="32" alt="github">
+  <!-- Twitter logo -->
+    <img src="img/twitter_icon.svg" alt="twitter">
+  <!-- LinkedIn logo -->
+    <img src="img/linkedin_icon.svg" alt="linkedin">
+  </div>
+</footer>
+</html>

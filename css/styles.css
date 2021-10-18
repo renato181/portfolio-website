@@ -1,0 +1,311 @@
+
+
+:root {
+  --background-color: #9DD4C5;
+  --primary-color: #D4C79D;
+  --secondary-color: #918DB0;
+  --text-color: #0E0354;
+  --dark-grey: #2b2b2b;
+  --light-gray: #B6D4DE;
+  --font-weight: 700;
+  --heading-font-size: 36px;
+  --body-font-size: 16px;
+}
+
+/*nav links*/
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+    color: var(--text-color);
+}
+
+.page-header .page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.logo{
+  display: block;
+  margin-left: auto;
+  max-width: 45px;
+  max-height: 45px;
+  height: auto;
+}
+
+.profile__text {
+    flex: 1 1 100px;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+body{
+  background-color: var(--background-color);
+  color: var(--text-color);
+
+  font-family: 'open sans condensed', sans-serif;
+  font-weight: var(--font-weight);
+  font-size: 16px;
+  line-height: 1.6;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 */
+}
+
+.profile__portrait {
+  float: left;
+  width: 250px;
+  height:auto;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+a {
+  color: var(--text-color);
+  padding-left: 40px;
+}
+
+h1 {
+  text-align: center;
+  font-size: var(--heading-font-size);
+  font-weight: var(--font-weight);
+}
+
+h3 {
+  text-align: center;
+  font-size: var(--body-font-size);
+  font-weight: var(--font-weight);
+}
+
+p {
+  text-align: center;
+  font-size: var(--body-font-size);
+}
+
+
+/*address div-contact page*/
+.address {
+  text-align: center;
+  color: var(--text-color);
+}
+
+
+/*pertaining to the about page*/
+li {
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+  font-size: var(--body-font-size);
+  color: var(--text-color);
+}
+
+
+a:hover, a:focus {
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+}
+
+a:visited {
+  /* visited link */
+  color: var(--text-color);
+}
+
+a:active {
+  /* selected link */
+  color: var(--text-color);
+}
+
+.button__secondary {
+  background-color: var(--primary-color);
+  color: #1D1F1C;
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--secondary-color);
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+  color: var(--secondary-color);
+}
+
+
+#my-link {/* id selector */
+  color: var(--primary-color);
+}
+
+.my-link {/* class selector */
+  color: var(--primary-color);
+}
+
+
+/*these are the links for tel, skype, email in contacts
+and the "see project on github" in work*/
+
+a {
+  color: var(--text-color);
+}
+
+
+/* grid for work projects*/
+.grid {
+  display: grid;
+}
+
+.grid__item {
+  background-color: var(--secondary-color);
+  text-align: center;
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.grid__item:last-child {
+  grid-column: auto / auto;
+  grid-row: auto / auto;
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+
+
+
+  h1 {
+    font-size: var(--heading-font-size);
+  }
+}
+
+
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+
+@keyframes sun {
+  from {
+    transform: translate(50, 100px);
+  }
+  to {
+    transform: translate(150px, 20px);
+  }
+
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/*sorted below this line*/
+
+
+
+
+
+
+
+.button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  transition: 0.2s opacity;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.button {
+  background-color: #ca8a8b;
+}
+
+
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
