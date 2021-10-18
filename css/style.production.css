@@ -263,8 +263,8 @@ a {
 
 @keyframes sun {
   from {
-    -webkit-transform: translate(50, 100px);
-            transform: translate(50, 100px);
+    -webkit-transform: translate(50px, 100px);
+            transform: translate(50px, 100px);
   }
   to {
     -webkit-transform: translate(150px, 20px);
