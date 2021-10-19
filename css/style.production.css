@@ -195,8 +195,20 @@ a {
 }
 
 .grid__item {
-  background-color: #918DB0;
-  text-align: center;
+  .grid__item {
+    background-color: var(--primary-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #780002;
+    height: 350px;
+    max-width: 350px;
+    align-items: center;
+    border-radius: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 5px 5px gray;
+  }
 
 }
 
